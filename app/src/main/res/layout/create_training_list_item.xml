@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_top"
+                android:paddingBottom="@dimen/padding_bottom"
+                android:background="@drawable/bg_gradient">
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/trainingTitleLabel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/defaultTextColor"
+        android:textSize="@dimen/text_size_h1"
+        android:layout_marginLeft="@dimen/margin_left"
+        tools:text="00"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exerciseLabel"
+        android:textColor="@color/defaultTextColor"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        tools:text="Create training list"
+        android:layout_toRightOf="@+id/quantityLabel"
+        android:layout_toEndOf="@+id/quantityLabel"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"/>
+
+    <TextView
+        tools:text="X"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/xLabel"
+        android:textColor="@color/defaultTextColor"
+        android:textSize="@dimen/text_size_h1"
+        android:text="X"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/trainingTitleLabel"
+        android:textAlignment="center"/>
+
+    <TextView
+        tools:text="MAX"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/quantityLabel"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/text_size_h1"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/xLabel"
+        android:layout_toEndOf="@+id/xLabel"
+        android:textAlignment="center"/>
+</RelativeLayout>
